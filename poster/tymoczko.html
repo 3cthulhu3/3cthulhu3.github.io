@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>13 · Möbius’ta ses yürütme — Matematik ve Estetik — Külliyat</title>
+<meta name="description" content="Matematik ve Estetik serisi, poster 13 / 14: Möbius’ta ses yürütme">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:1080px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:1080px;height:1350px;transform-origin:0 0}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html#matematik-ve-estetik">Külliyat</a><span>Matematik ve Estetik · 13 / 14</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art">
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 72px 80px; display: flex; flex-direction: column; gap: 40px; background: #12110F; color: #EDEAE2; font-family: 'Space Grotesk', system-ui, sans-serif">
+<header style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: 0.12em; color: #A29D92; border-bottom: 1px solid #3A3833; padding-bottom: 18px">
+<span>KÜLLİYYÂT — MATEMATİK VE ESTETİK</span>
+<span>IV · DIŞSAL · 13 / 14</span>
+</header>
+<div style="flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center">
+<div style="display: flex; flex-direction: column; gap: 14px; align-items: center">
+<div style="display: grid; width: 912px">
+<svg style="grid-area: 1 / 1" viewBox="0 0 912 598" width="912" height="598" aria-hidden="true"><path d="M798 575L912 506M646 575L912 414M494 575L912 322M342 575L912 230M190 575L912 138M38 575L912 46M0 506L798 23M0 414L646 23M0 322L494 23M0 230L342 23M0 138L190 23M0 46L38 23M0 552L38 575M0 460L190 575M0 368L342 575M0 276L494 575M0 184L646 575M0 92L798 575M38 23L912 552M190 23L912 460M342 23L912 368M494 23L912 276M646 23L912 184M798 23L912 92" fill="none" stroke="#EDEAE2" stroke-opacity="0.24" stroke-width="1"></path><path d="M0 23H912M0 575H912" fill="none" stroke="#EDEAE2" stroke-width="2"></path><path d="M11 575V23M2 310L11 290L20 310M901 575V23M892 288L901 308L910 288" fill="none" stroke="#F0603A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="grid-area: 1 / 1; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 46px" role="img" aria-label="İki sesli akorların 78 noktası: alt ve üst kenarda eşsesler, orta sırada tritonlar; sol ve sağ kenar ters çevrilerek birbirine yapışır">
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">F♯F♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">GG</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">A♭A♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">AA</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">B♭B♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">BB</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">GF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">A♭G</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">AA♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭A</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BB♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CB</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">GF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">A♭F♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">AG</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭A♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BA</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CB♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">A♭F</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">AF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭G</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BA♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CA</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯B♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">A♭E</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">AF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭F♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BG</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CA♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯A</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">AE</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭F</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CG</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯A♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">DA</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #F0603A">AE♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #F0603A">B♭E</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #F0603A">BF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #F0603A">CF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #F0603A">C♯G</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #F0603A">DA♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭E♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BE</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯F♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">DG</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">E♭A♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">B♭D</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BE♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CE</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯F</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">DF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">E♭G</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BD</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CE♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯E</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">DF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">E♭F♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">EG</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">BC♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CD</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯E♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">DE</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">E♭F</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">EF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">CC♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">C♯D</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">DE♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">E♭E</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">EF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #EDEAE2">FF♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">CC</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">C♯C♯</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">DD</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">E♭E♭</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">EE</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: #12110F; color: #A29D92">FF</span></div>
+
+<div style="display: flex; align-items: center; justify-content: center"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 1px 4px; background: transparent; color: #EDEAE2"></span></div>
+
+</div>
+</div>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A29D92">Alt ve üst kenar: eşsesler (ayna) · renkli orta sıra: tritonlar · çapraz komşuluk: tek sesin yarım ses adımı · sol ve sağ kenar ters çevrilerek yapışır</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<h1 style="margin: 0; font-size: 68px; line-height: 1.02; font-weight: 700; letter-spacing: -0.02em">Möbius’ta ses yürütme</h1>
+<p style="margin: 0; font-size: 22px; line-height: 1.45; max-width: 900px">Sırasız iki perde sınıfı bir nokta olsun: torus üzerinde (x, y) ile (y, x) özdeşleşir ve geriye bir Möbius şeridi kalır. Tek kenarı eşseslerdir, orta hattı tritonlar. İki akor arasındaki uzaklık seslerin toplam ne kadar yürüdüğüdür; iyi ses yürütme bu yüzeyde kısa yoldur. Üç seste uzay burulmuş bir üçgen prizmaya dönüşür ve majör ile minör üçlüler merkezine yakın durur.</p>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; line-height: 1.55; color: #A29D92">Dmitri Tymoczko, “The Geometry of Musical Chords,” Science 313 (2006); A Geometry of Music (2011) · 78 nokta: 12 eşses + 66 aralık</p>
+</div>
+</div>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button></div>
+<div class="cap">
+<div class="no">13 · 1080 × 1350</div>
+<h1>Möbius’ta ses yürütme</h1>
+<p class="tur">poster · dışsal tez</p>
+</div>
+</main>
+<nav class="nav" aria-label="Posterler arasında gezinme"><a href="urmevi.html">← 12 · Tek aralık, 17 perde</a><a href="borges.html">14 · Bu sayfa da rafta →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=1080,H=1350;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+</body>
+</html>
