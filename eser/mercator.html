@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>023 · Mercator Aralığı — Külliyat</title>
+<meta name="description" content="Saf beşliler (3:2) zinciri, oktava indirgenmiş. Her köşe bir öncekinden bir beşli uzakta; yarıçap her adımda biraz büyür.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:900px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:900px;height:900px;transform-origin:0 0}
+.ctl{max-width:900px;margin:18px auto 0;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.ctl label{display:flex;align-items:center;gap:10px;min-height:44px}
+.ctl input[type=range]{width:min(260px,60vw);accent-color:#1C1B19}
+.ctl select,.ctl input[type=number]{font:inherit;padding:8px 10px;min-height:44px;border:1px solid var(--line);background:#F1EFEA;color:var(--ink)}
+.ctl output{min-width:6ch;color:var(--soft)}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.cap .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:34px 0 10px}
+.cap .b{font-size:19px;line-height:1.5;margin:0 0 12px}
+.cap .b.sp{color:var(--soft)}
+.cap .m{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;margin-right:8px;font-style:normal;white-space:nowrap}
+.cap .live{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#8F3517;margin:0 0 12px}
+.cap .lej{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--soft);line-height:1.8;margin-top:22px}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>023 / 027</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art" style="background:#E7E2D7">
+<svg width="900" height="900" viewBox="0 0 900 900" role="img" aria-label="Oktava indirgenmiş saf beşliler zincirinden oluşan, kapanmayan yıldız biçimli sarmal">
+      <circle cx="450" cy="450" r="410" fill="none" stroke="#CFC8B9" stroke-width="1"></circle>
+      <path  stroke="#5A564E" stroke-width="1" fill="none" id="e1"></path>
+      <path  stroke="#1C1B19" stroke-width="2.5" fill="none" id="e2"></path>
+      <path d="M450 450L450 30" stroke="#1C1B19" stroke-width="1" stroke-dasharray="3 5" fill="none"></path>
+      <path  stroke="#2B4C7E" stroke-width="0.9" stroke-opacity="0.78" fill="none" stroke-linejoin="round" id="e3"></path>
+      <path  fill="#2B4C7E" id="e4"></path>
+      <circle cx="450" cy="340" r="6" fill="#EFEBE3" stroke="#1C1B19" stroke-width="1.5"></circle>
+      <circle   r="6" fill="#A8401C" id="e5"></circle>
+    </svg>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button>
+<div class="ctl"><label for="c-fifths">beşli sayısı <select id="c-fifths"><option>12</option><option>41</option><option selected>53</option><option>306</option><option>665</option></select></label></div>
+</div>
+<div class="cap">
+<div class="no">023 · 900 × 900 · Eşikler I / V</div>
+<h1>Mercator Aralığı</h1>
+<p class="tur">saf beşliler sarmalı, oktava indirgenmiş</p>
+<p class="tez">Saf beşliler (3:2) zinciri, oktava indirgenmiş. Her köşe bir öncekinden bir beşli uzakta; yarıçap her adımda biraz büyür.</p>
+<p class="lej">■ kesin — ispatlanmış ya da ölçülmüş<br>◆ makul — literatürde dayanağı olan yorum<br>○ spekülatif — önerilmiş, sınanmamış okuma</p>
+<p class="k">Gözlem — yalnızca görünen</p>
+<p class="b">İçeriden dışarıya açılan, kendini tekrar etmeyen bir yıldız-sarmal; her çizgi merkezin neredeyse karşısına atlıyor. Dış halkada <span class="v-n"></span> eşit kertik (ince), 12 eşit kertik (kalın). Kesik dikey çizgi “ideal kapanış”: son nokta (kızıl) ona çok yakın düşüyor, üstüne değil.</p>
+<p class="k">Yapı</p>
+<p class="b"><span class="m">■ KESİN</span>3ᵐ = 2ⁿ denkleminin pozitif tam sayılarda çözümü yoktur (asal çarpanlara ayrılışın tekliği); beşliler zinciri hiçbir zaman kapanmaz. Yakın kapanışlar log₂(3/2)’nin sürekli kesir yakınsaklarından gelir: 7/12, 24/41, 31/53, 179/306, 389/665. On iki beşli ≈ yedi oktav, artık 23,46 sent (Pitagor koması); elli üç beşli ≈ otuz bir oktav, artık ≈ 3,6 sent (Mercator koması).</p>
+<p class="b"><span class="m">■ KESİN</span>Arel–Ezgi–Uzdilek sistemi tam sesi 9 komaya böler; dayandığı ızgara budur. <span class="m">◆ MAKUL</span>Bu ızgaranın icradaki perdeleri karşılamadığı uzun süredir tartışılıyor (ör. O. Yarman’ın 79 sesli önerisi).</p>
+<p class="live">Şu an: <span class="v-n"></span> beşli ≈ <span class="v-oct"></span> oktav · artık <span class="v-gap"></span> sent</p>
+<p class="k">Olası okumalar</p>
+<p class="b"><span class="m">◆ MAKUL</span>Cazın eşit tamperamanı ile makam kuramı aynı imkânsızlığa verilmiş iki ayrı muhasebedir: biri artığı on iki aralığa eşitçe dağıtır, öteki daha ince bir ızgarada saklar. Hiçbiri artığı yok etmez; yalnızca nerede duracağına karar verir.</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span>Kapanmayan sarmal, çözülmeyen bir gerilimin geometrisi gibi okunabilir. Segâh ya da hüzzamdaki “koma perdesi” duygusunun bu artığın kulaktaki izi olduğu fikri çekici, ama ölçülmemiş bir psikoakustik iddiadır.</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span>Bir icrayı notaya geçirmek de aynı işlemdir: süreklilikten ayrık bir ızgaraya izdüşüm. Soru, izdüşümün olup olmayacağı değil, hangi artığın kabul edilebilir sayılacağıdır.</p>
+<p class="k">Size kalan</p>
+<p class="b">Görselin altındaki seçiciyle beşli sayısını 12’den 665’e kadar değiştirin. Hangi noktada “kapandı” demeye başladınız — ve o yargı gözün mü, kulağın mı? Sarmalı kapanmaya zorlasaydınız, artığı nereye gömerdiniz?</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="incekalin.html">← 022 · İnce · Kalın</a><a href="esik.html">024 · Eşik →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=900,H=900;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i);};
+function set(id,attr,v){var e=$(id);if(e)e.setAttribute(attr,v);}
+function txt(cls,v){var es=document.querySelectorAll('.'+cls);for(var i=0;i<es.length;i++)es[i].textContent=v;}
+function BIND(V){set('e1','d',V.ticksN);set('e2','d',V.ticks12);set('e3','d',V.spiral);set('e4','d',V.dots);set('e5','cx',V.ex);set('e5','cy',V.ey);}
+
+function upd(){var n=Number($('c-fifths').value)||53;
+var f=Math.log2(1.5),C=450,T=2*Math.PI,H=Math.PI/2,sp='',dots='',ex=C,ey=C;
+for(var k=0;k<=n;k++){var a=((k*f)%1)*T-H,r=110+k*(300/n),x=C+r*Math.cos(a),y=C+r*Math.sin(a);
+sp+=(k?'L':'M')+x.toFixed(1)+' '+y.toFixed(1);dots+='M'+(x-1.8).toFixed(1)+' '+y.toFixed(1)+'a1.8 1.8 0 1 0 3.6 0a1.8 1.8 0 1 0 -3.6 0';ex=x;ey=y;}
+function ring(m,r1,r2){var d='';for(var i=0;i<m;i++){var a=T*i/m-H;d+='M'+(C+r1*Math.cos(a)).toFixed(1)+' '+(C+r1*Math.sin(a)).toFixed(1)+'L'+(C+r2*Math.cos(a)).toFixed(1)+' '+(C+r2*Math.sin(a)).toFixed(1);}return d;}
+var oct=Math.round(n*f),g=(n*f-oct)*1200,dg=Math.abs(g)<1?3:2;
+var V={spiral:sp,dots:dots,ticksN:ring(n,420,434),ticks12:ring(12,438,450),ex:ex.toFixed(1),ey:ey.toFixed(1)};
+BIND(V);txt('v-n',n);txt('v-oct',oct);txt('v-gap',(g>=0?'+':'−')+Math.abs(g).toFixed(dg).replace('.',','));}
+$('c-fifths').addEventListener('change',upd);upd();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>026 · Doğaçlama — Külliyat</title>
+<meta name="description" content="Aynı yasa, aynı kütleler, üst açıları arasında δ kadar fark.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:900px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:900px;height:900px;transform-origin:0 0}
+.ctl{max-width:900px;margin:18px auto 0;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.ctl label{display:flex;align-items:center;gap:10px;min-height:44px}
+.ctl input[type=range]{width:min(260px,60vw);accent-color:#1C1B19}
+.ctl select,.ctl input[type=number]{font:inherit;padding:8px 10px;min-height:44px;border:1px solid var(--line);background:#F1EFEA;color:var(--ink)}
+.ctl output{min-width:6ch;color:var(--soft)}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.cap .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:34px 0 10px}
+.cap .b{font-size:19px;line-height:1.5;margin:0 0 12px}
+.cap .b.sp{color:var(--soft)}
+.cap .m{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;margin-right:8px;font-style:normal;white-space:nowrap}
+.cap .live{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#8F3517;margin:0 0 12px}
+.cap .lej{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--soft);line-height:1.8;margin-top:22px}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>026 / 027</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art" style="background:#E7E2D7">
+<svg width="900" height="900" viewBox="0 0 900 900" role="img" aria-label="Neredeyse aynı koşullarla başlayan iki çift sarkacın alt uçlarının izleri; bir süre üst üste binip sonra ayrılıyorlar">
+      <circle cx="450" cy="450" r="400" fill="none" stroke="#CFC8B9" stroke-width="1" stroke-dasharray="2 6"></circle>
+      <path  fill="none" stroke="#1C1B19" stroke-width="0.8" stroke-opacity="0.72" stroke-linejoin="round" id="e1"></path>
+      <path  fill="none" stroke="#A8401C" stroke-width="1" stroke-opacity="0.85" stroke-linejoin="round" id="e2"></path>
+      <path  fill="none" stroke="#5A564E" stroke-width="1.5" id="e3"></path>
+      <circle cx="450" cy="450" r="4" fill="#1C1B19"></circle>
+      <circle   r="7" fill="#EFEBE3" stroke="#5A564E" stroke-width="1.5" id="e4"></circle>
+      <circle   r="7" fill="#EFEBE3" stroke="#5A564E" stroke-width="1.5" id="e5"></circle>
+      <circle   r="14" fill="none" stroke="#A8401C" stroke-width="1.6" id="e6"></circle>
+    </svg>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button>
+<div class="ctl"><label for="c-exp">δ = 10<sup>−k</sup>, k <input type="range" id="c-exp" min="2" max="8" step="1" value="4"><output id="o-exp">4</output></label></div>
+</div>
+<div class="cap">
+<div class="no">026 · 900 × 900 · Eşikler IV / V</div>
+<h1>Doğaçlama</h1>
+<p class="tur">iki çift sarkaç, RK4, 24 saniye</p>
+<p class="tez">Aynı yasa, aynı kütleler, üst açıları arasında δ kadar fark.</p>
+<p class="lej">■ kesin — ispatlanmış ya da ölçülmüş<br>◆ makul — literatürde dayanağı olan yorum<br>○ spekülatif — önerilmiş, sınanmamış okuma</p>
+<p class="k">Gözlem — yalnızca görünen</p>
+<p class="b">Gri çubuklar başlangıç konumunu gösteriyor. Koyu çizgi birinci sarkacın alt ucunun izi; kızıl çizgi ikincisininki, ayrılmaya başladığı yerden itibaren. Daha önce iki iz tamamen üst üste biniyor. Kızıl halka ayrışmanın ilk görünür olduğu noktayı işaretliyor.</p>
+<p class="live">δ = <span class="v-dTxt"></span> rad · <span class="v-verdict"></span></p>
+<p class="k">Yapı</p>
+<p class="b"><span class="m">■ KESİN</span>Çift sarkaç deterministik, enerjiyi koruyan ama integre edilemeyen bir sistemdir; bu enerji düzeyinde kaotik bölgeleri vardır. Yakın başlangıçlar yaklaşık üstel olarak ayrışır (pozitif Lyapunov üsteli λ). Öngörü ufku ≈ (1/λ)·ln(tolerans/δ): başlangıç belirsizliğini on kat azaltmak ufku yalnızca sabit bir miktar uzatır.</p>
+<p class="b"><span class="m">■ KESİN</span>Çizilen eğri gerçek yörünge değil, sayısal bir yörüngedir. Gölgeleme sonuçları (Anosov, Bowen) bunun bir gerçek yörüngeye yakın kaldığını yalnızca hiperbolik sistemler için güvenceye alır; çift sarkaç öyle değildir. Kızıl halkadan sonrası, yöntemin de sınırıdır.</p>
+<p class="k">Olası okumalar</p>
+<p class="b"><span class="m">◆ MAKUL</span>Doğaçlama için yaygın metafor “kural artı özgürlük”tür. Bu tablo daha keskin bir şey gösterir: tamamen kurallı bir sistem de öngörülemez olabilir. Öngörülemezlik özgürlüğün kanıtı değildir.</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span>Bir doğaçlamacının “aynı” cümleyi iki kez çalamaması, başlangıçtaki milimetrik farkların büyümesi mi, yoksa bilinçli bir varyasyon mu? Dışarıdan bakan için bu ikisi belki hiç ayırt edilemez.</p>
+<p class="k">Size kalan</p>
+<p class="b">Görselin altındaki kaydırıcıyla δ’yı 10⁻² ile 10⁻⁸ arasında değiştirin; ayrışma zamanı doğrusal mı büyüyor, logaritmik mi? İki çizgiye “aynı” demeyi hangi noktada bırakıyorsunuz — ve o eşik sistemin mi, gözünüzün mü?</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="lahza.html">← 025 · Lahza</a><a href="karo.html">027 · Bitmeyen Karo →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=900,H=900;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i);};
+function set(id,attr,v){var e=$(id);if(e)e.setAttribute(attr,v);}
+function txt(cls,v){var es=document.querySelectorAll('.'+cls);for(var i=0;i<es.length;i++)es[i].textContent=v;}
+function BIND(V){set('e1','d',V.trA);set('e2','d',V.trB);set('e3','d',V.rods);set('e4','cx',V.x1);set('e4','cy',V.y1);set('e5','cx',V.x2);set('e5','cy',V.y2);set('e6','cx',V.dx);set('e6','cy',V.dy);}
+
+var G=9.81,cache={};
+function deriv(s){var t1=s[0],t2=s[1],w1=s[2],w2=s[3],d=t1-t2,den=3-Math.cos(2*d);
+return[w1,w2,(-3*G*Math.sin(t1)-G*Math.sin(t1-2*t2)-2*Math.sin(d)*(w2*w2+w1*w1*Math.cos(d)))/den,(2*Math.sin(d)*(2*w1*w1+2*G*Math.cos(t1)+w2*w2*Math.cos(d)))/den];}
+function add(s,k,h){return[s[0]+h*k[0],s[1]+h*k[1],s[2]+h*k[2],s[3]+h*k[3]];}
+function step(s,h){var k1=deriv(s),k2=deriv(add(s,k1,h/2)),k3=deriv(add(s,k2,h/2)),k4=deriv(add(s,k3,h));var o=[];for(var i=0;i<4;i++)o.push(s[i]+h/6*(k1[i]+2*k2[i]+2*k3[i]+k4[i]));return o;}
+function run(t10){var s=[t10,2.4,0,0],out=[];for(var i=0;i<12000;i++){if(i%25===0)out.push([450+200*(Math.sin(s[0])+Math.sin(s[1])),450+200*(Math.cos(s[0])+Math.cos(s[1]))]);s=step(s,0.002);}return out;}
+var A=run(2.0);
+var x1=450+200*Math.sin(2.0),y1=450+200*Math.cos(2.0),x2=x1+200*Math.sin(2.4),y2=y1+200*Math.cos(2.4);
+function pts(arr){var d='';for(var i=0;i<arr.length;i++)d+=(i?'L':'M')+arr[i][0].toFixed(1)+' '+arr[i][1].toFixed(1);return d;}
+var sup='⁰¹²³⁴⁵⁶⁷⁸⁹';
+function upd(){var e=Number($('c-exp').value);$('o-exp').textContent=e;
+var B=cache[e]||(cache[e]=run(2.0+Math.pow(10,-e))),k=-1;
+for(var i=0;i<A.length;i++){if(Math.hypot(A[i][0]-B[i][0],A[i][1]-B[i][1])>20){k=i;break;}}
+var from=k<0?0:Math.max(0,k-5),mark=k<0?A[A.length-1]:A[k];
+BIND({trA:pts(A),trB:pts(B.slice(from)),rods:'M450 450L'+x1.toFixed(1)+' '+y1.toFixed(1)+'L'+x2.toFixed(1)+' '+y2.toFixed(1),x1:x1.toFixed(1),y1:y1.toFixed(1),x2:x2.toFixed(1),y2:y2.toFixed(1),dx:mark[0].toFixed(1),dy:mark[1].toFixed(1)});
+txt('v-dTxt','10⁻'+String(e).split('').map(function(c){return sup[+c];}).join(''));
+txt('v-verdict',k<0?'24 s içinde görünür ayrışma yok':'görünür ayrışma t ≈ '+(k*0.05).toFixed(2).replace('.',',')+' s');}
+$('c-exp').addEventListener('input',upd);upd();
+})();
+</script>
+</body>
+</html>

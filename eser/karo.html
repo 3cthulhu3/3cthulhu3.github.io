@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>027 · Bitmeyen Karo — Külliyat</title>
+<meta name="description" content="Tekrar etmeyen ama düzensiz de olmayan bir döşeme, dairesel bir pencereden kesildi.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:900px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:900px;height:900px;transform-origin:0 0}
+.ctl{max-width:900px;margin:18px auto 0;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.ctl label{display:flex;align-items:center;gap:10px;min-height:44px}
+.ctl input[type=range]{width:min(260px,60vw);accent-color:#1C1B19}
+.ctl select,.ctl input[type=number]{font:inherit;padding:8px 10px;min-height:44px;border:1px solid var(--line);background:#F1EFEA;color:var(--ink)}
+.ctl output{min-width:6ch;color:var(--soft)}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.cap .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:34px 0 10px}
+.cap .b{font-size:19px;line-height:1.5;margin:0 0 12px}
+.cap .b.sp{color:var(--soft)}
+.cap .m{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;margin-right:8px;font-style:normal;white-space:nowrap}
+.cap .live{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#8F3517;margin:0 0 12px}
+.cap .lej{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--soft);line-height:1.8;margin-top:22px}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>027 / 027</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art" style="background:#E7E2D7">
+<svg width="900" height="900" viewBox="0 0 900 900" role="img" aria-label="Kalın ve ince eşkenar dörtgenlerden oluşan, periyodik olmayan beşli simetrili bir döşeme">
+      <path  fill="#C9B98F" stroke="#EFEBE3" stroke-width="1.4" stroke-linejoin="round" id="e1"></path>
+      <path  fill="#2B4C7E" stroke="#EFEBE3" stroke-width="1.4" stroke-linejoin="round" id="e2"></path>
+    </svg>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button>
+<div class="ctl"><label for="c-shift">kayma γ <input type="range" id="c-shift" min="-0.5" max="0.5" step="0.01" value="0"><output id="o-shift">0,00</output></label></div>
+</div>
+<div class="cap">
+<div class="no">027 · 900 × 900 · Eşikler V / V</div>
+<h1>Bitmeyen Karo</h1>
+<p class="tur">Penrose eşkenar dörtgenleri, de Bruijn pentagrid yöntemi</p>
+<p class="tez">Tekrar etmeyen ama düzensiz de olmayan bir döşeme, dairesel bir pencereden kesildi.</p>
+<p class="lej">■ kesin — ispatlanmış ya da ölçülmüş<br>◆ makul — literatürde dayanağı olan yorum<br>○ spekülatif — önerilmiş, sınanmamış okuma</p>
+<p class="k">Gözlem — yalnızca görünen</p>
+<p class="b">İki tür eşkenar dörtgen: koyu olanlar geniş açılı (72°), açık olanlar dar (36°). Yer yer beş kollu yıldızlar, on kenarlı halkalar beliriyor; ama göz bir “birim desen” aradığında bulamıyor. Kenar düzensiz: pencere dairesel, döşeme değil.</p>
+<p class="live">kalın <span class="v-nThick"></span> · ince <span class="v-nThin"></span> · oran <span class="v-ratio"></span> (φ ≈ 1,618)</p>
+<p class="k">Yapı</p>
+<p class="b"><span class="m">■ KESİN</span>Penrose (1974) karoları düzlemi döşer, ama yalnızca periyodik olmayan biçimde. Sonsuz döşemede kalın/ince oranı altın orana gider; bu sonlu pencerede sapma kenar etkisidir. De Bruijn (1981): bu döşemeler beş boyutlu kübik kafesin düzleme izdüşümüdür. Herhangi bir sonlu parça her Penrose döşemesinde tekrar tekrar bulunur (yerel izomorfizm).</p>
+<p class="b"><span class="m">■ KESİN</span>Berger (1966): verilen bir karo kümesinin düzlemi döşeyip döşemediğine karar veren genel bir algoritma yoktur. İspat, aperiyodik bir karo kümesi kurarak karolarla bir Turing makinesini simüle eder ve durma problemine indirger. Shechtman’ın beşli simetrili kırınımı (1982; Nobel 2011) bu geometrinin doğada da var olduğunu gösterdi.</p>
+<p class="k">Olası okumalar</p>
+<p class="b"><span class="m">◆ MAKUL, TARTIŞMALI</span>Lu ve Steinhardt (<i>Science</i>, 2007), İsfahan’daki Darb-ı İmam türbesinin (1453) girih desenlerinin yarı-kristal düzene çok yaklaştığını gösterdi. Ustaların bunu bilinçli bir alt bölme kuralıyla ürettiği iddiası ise tartışmalıdır (ör. P. Cromwell’in eleştirileri).</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span>Yerel kurallar küresel düzeni belirler, ama hiçbir yerel bakış onu kanıtlayamaz. Bunu Gödel’le özdeşleştirmek gevşek bir benzetme olur; teknik akrabalık yalnızca Berger üzerinden, hesaplanabilirlik aracılığıyla kurulur.</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span>Eski bir çini ya da halı parçasında “hata” sanılan sapma, sonlu bir parçanın sonsuz bir kurala tanıklık edememesi de olabilir.</p>
+<p class="k">Size kalan</p>
+<p class="b">Görselin altındaki kaydırıcıyla kaymayı (γ) değiştirin: desen değişir, ama hiçbir parça “yeni” değildir. Bu dairenin hangi bölgesine bakarak “bu bir Penrose döşemesi” diyebilirdiniz — ve hangi bölgeye bakarak asla diyemezdiniz?</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="dogaclama.html">← 026 · Doğaçlama</a><span></span></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=900,H=900;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i);};
+function set(id,attr,v){var e=$(id);if(e)e.setAttribute(attr,v);}
+function txt(cls,v){var es=document.querySelectorAll('.'+cls);for(var i=0;i<es.length;i++)es[i].textContent=v;}
+function BIND(V){set('e1','d',V.thin);set('e2','d',V.thick);}
+
+function upd(){var sh=Number($('c-shift').value);$('o-shift').textContent=sh.toFixed(2).replace('.',',');
+var T=2*Math.PI,base=[0.2,0.15,0.1,-0.2,-0.25],gam=[],e=[],j;
+for(j=0;j<5;j++){gam.push(base[j]+sh*Math.cos(T*j/5+0.9));e.push([Math.cos(T*j/5),Math.sin(T*j/5)]);}
+var R=7,rh=[];
+for(var r=0;r<5;r++)for(var s=r+1;s<5;s++)for(var kr=-R;kr<=R;kr++)for(var ks=-R;ks<=R;ks++){
+var a1=e[r][0],b1=e[r][1],a2=e[s][0],b2=e[s][1],c1=kr-gam[r],c2=ks-gam[s],det=a1*b2-a2*b1,px=(c1*b2-c2*b1)/det,py=(a1*c2-a2*c1)/det,K=[];
+for(j=0;j<5;j++)K.push(Math.ceil(px*e[j][0]+py*e[j][1]+gam[j]));K[r]=kr;K[s]=ks;
+var co=[[0,0],[1,0],[1,1],[0,1]].map(function(o){var KK=K.slice();KK[r]+=o[0];KK[s]+=o[1];var X=0,Y=0;for(var q=0;q<5;q++){X+=KK[q]*e[q][0];Y+=KK[q]*e[q][1];}return[X,Y];});
+var dd=(s-r)%5;rh.push({cx:(co[0][0]+co[1][0]+co[2][0]+co[3][0])/4,cy:(co[0][1]+co[1][1]+co[2][1]+co[3][1])/4,co:co,thick:dd===1||dd===4});}
+var mx=0,my=0;rh.forEach(function(t){mx+=t.cx;my+=t.cy;});mx/=rh.length;my/=rh.length;
+var sc=68,thick='',thin='',nT=0,nt=0;
+rh.forEach(function(t){if(Math.hypot(t.cx-mx,t.cy-my)>=6.2)return;var d='M'+t.co.map(function(p){return(450+(p[0]-mx)*sc).toFixed(1)+' '+(450+(p[1]-my)*sc).toFixed(1);}).join('L')+'Z';if(t.thick){thick+=d;nT++;}else{thin+=d;nt++;}});
+BIND({thick:thick,thin:thin});txt('v-nThick',nT);txt('v-nThin',nt);txt('v-ratio',nt?(nT/nt).toFixed(3).replace('.',','):'—');}
+$('c-shift').addEventListener('input',upd);upd();
+})();
+</script>
+</body>
+</html>

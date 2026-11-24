@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>024 · Eşik — Külliyat</title>
+<meta name="description" content="Her hücre p olasılığıyla yanabilir; ateş sol kenardan verilir ve yalnızca komşu hücreye geçer.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:900px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:900px;height:900px;transform-origin:0 0}
+.ctl{max-width:900px;margin:18px auto 0;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.ctl label{display:flex;align-items:center;gap:10px;min-height:44px}
+.ctl input[type=range]{width:min(260px,60vw);accent-color:#1C1B19}
+.ctl select,.ctl input[type=number]{font:inherit;padding:8px 10px;min-height:44px;border:1px solid var(--line);background:#F1EFEA;color:var(--ink)}
+.ctl output{min-width:6ch;color:var(--soft)}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.cap .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:34px 0 10px}
+.cap .b{font-size:19px;line-height:1.5;margin:0 0 12px}
+.cap .b.sp{color:var(--soft)}
+.cap .m{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;margin-right:8px;font-style:normal;white-space:nowrap}
+.cap .live{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#8F3517;margin:0 0 12px}
+.cap .lej{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--soft);line-height:1.8;margin-top:22px}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>024 / 027</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art" style="background:#E7E2D7">
+<svg width="900" height="900" viewBox="-0.5 0 36.5 36" role="img" aria-label="Kare kafes üzerinde soldan tutuşan ateşin yanabilir hücreler arasında yayılışı" shape-rendering="crispEdges">
+      <path  fill="#3E4A3A" id="e1"></path>
+      <path  fill="#A8401C" id="e2"></path>
+      <path  stroke="#E7E2D7" stroke-width="0.09" fill="none" id="e3"></path>
+      <path d="M-0.35 0V36" stroke="#A8401C" stroke-width="0.14" fill="none" id="e4"></path>
+    </svg>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button>
+<div class="ctl"><label for="c-p">p <input type="range" id="c-p" min="0.45" max="0.75" step="0.0001" value="0.5927"><output id="o-p">0,5927</output></label><label for="c-seed">tohum <input type="number" id="c-seed" min="1" max="9999" value="23" style="width:7em"></label></div>
+</div>
+<div class="cap">
+<div class="no">024 · 900 × 900 · Eşikler II / V</div>
+<h1>Eşik</h1>
+<p class="tur">site perkolasyonu, 36 × 36 kafes</p>
+<p class="tez">Her hücre p olasılığıyla yanabilir; ateş sol kenardan verilir ve yalnızca komşu hücreye geçer.</p>
+<p class="lej">■ kesin — ispatlanmış ya da ölçülmüş<br>◆ makul — literatürde dayanağı olan yorum<br>○ spekülatif — önerilmiş, sınanmamış okuma</p>
+<p class="k">Gözlem — yalnızca görünen</p>
+<p class="b">Koyu hücreler yanabilir ama ateşin ulaşmadığı yerler; kızıl hücreler soldan başlayan kümenin vardığı her yer; açık zemin boşluk. Kızıl bölge parmak parmak, girintili; içinde yanmamış adacıklar ve koyu kıyılar kalıyor.</p>
+<p class="live">p = <span class="v-pTxt"></span> · yanan <span class="v-burned"></span> / <span class="v-trees"></span> hücre · <span class="v-verdict"></span></p>
+<p class="k">Yapı</p>
+<p class="b"><span class="m">■ KESİN</span>Kare kafeste site perkolasyonunun kritik eşiği p<sub>c</sub> ≈ 0,592746’dır; kapalı bir formu bilinmez, sayısal olarak bulunmuştur. Sonsuz kafeste p &lt; p<sub>c</sub> iken sonsuz küme olasılığı sıfır, p &gt; p<sub>c</sub> iken pozitiftir. Eşikte küme fraktaldır: iki boyutta boyutu 91/48.</p>
+<p class="b"><span class="m">■ KESİN</span>Sonlu kafeste geçiş keskin değil, yumuşaktır. Bu tablo yalnızca 36 hücre genişliğinde; tam eşikte ateşin karşıya geçip geçmemesi tohuma bağlıdır.</p>
+<p class="k">Olası okumalar</p>
+<p class="b"><span class="m">◆ MAKUL</span>Drossel–Schwabl (1992) orman yangını modeli, bu yapıyı öz-örgütlenmiş kritiklikle birleştirip yangın büyüklüklerinin güç yasasına uyan dağılımı için bir sezgi verir. Gerçek yangında rüzgâr, eğim ve nem izotropiyi bozar; model tam da gerçekliğin onu bozduğu yerde öğreticidir.</p>
+<p class="b"><span class="m">◆ MAKUL</span>Eşik yakınında yoğunluktaki birkaç yüzdelik fark sonucu kökten değiştirir; erken müdahalenin değeri doğrusal değildir.</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span>Bir fikir, bir ekip ya da bir topluluk da perkolasyon problemi gibi okunabilir: bağlantı yoğunluğu eşiği aşmadıkça hiçbir şey kenardan kenara taşınmaz. Ama insan ağları kafes değildir; bu benzetme dereceler dağılımını yok sayar.</p>
+<p class="k">Size kalan</p>
+<p class="b">Görselin altındaki kaydırıcıyla p’yi 0,55 ile 0,65 arasında kaydırın. Geçişi nerede “gördünüz”, ve göz eşiği kaç hücre doğrulukla seziyor? Bu kafesin üstünden geçen bir gözcü yalnızca tek bir hücreyi bilebilseydi, hangisini seçerdi?</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="mercator.html">← 023 · Mercator Aralığı</a><a href="lahza.html">025 · Lahza →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=900,H=900;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i);};
+function set(id,attr,v){var e=$(id);if(e)e.setAttribute(attr,v);}
+function txt(cls,v){var es=document.querySelectorAll('.'+cls);for(var i=0;i<es.length;i++)es[i].textContent=v;}
+function BIND(V){set('e1','d',V.tree);set('e2','d',V.burn);set('e3','d',V.grid);}
+
+function upd(){var N=36,p=Number($('c-p').value),s=(Number($('c-seed').value)|0)>>>0;$('o-p').textContent=p.toFixed(4).replace('.',',');
+function rnd(){s=(s+0x6D2B79F5)>>>0;var t=s;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return((t^(t>>>14))>>>0)/4294967296;}
+var g=[],b=[],x,y,i;for(y=0;y<N;y++){g.push([]);b.push([]);for(x=0;x<N;x++){g[y].push(rnd()<p);b[y].push(false);}}
+var q=[];for(y=0;y<N;y++)if(g[y][0]){b[y][0]=true;q.push([y,0]);}
+for(i=0;i<q.length;i++){var yy=q[i][0],xx=q[i][1],nb=[[yy+1,xx],[yy-1,xx],[yy,xx+1],[yy,xx-1]];for(var j=0;j<4;j++){var Y=nb[j][0],X=nb[j][1];if(Y>=0&&Y<N&&X>=0&&X<N&&g[Y][X]&&!b[Y][X]){b[Y][X]=true;q.push([Y,X]);}}}
+function runs(f){var d='';for(var y=0;y<N;y++){var x=0;while(x<N){if(f(y,x)){var x0=x;while(x<N&&f(y,x))x++;d+='M'+x0+' '+y+'h'+(x-x0)+'v1h-'+(x-x0)+'z';}else x++;}}return d;}
+var grid='';for(i=1;i<N;i++)grid+='M'+i+' 0V'+N+'M0 '+i+'H'+N;
+var trees=0,burned=0,spans=false;for(y=0;y<N;y++)for(x=0;x<N;x++){if(g[y][x])trees++;if(b[y][x])burned++;}for(y=0;y<N;y++)if(b[y][N-1])spans=true;
+BIND({tree:runs(function(y,x){return g[y][x]&&!b[y][x];}),burn:runs(function(y,x){return b[y][x];}),grid:grid});
+txt('v-trees',trees);txt('v-burned',burned);txt('v-verdict',spans?'ateş karşı kenara ulaştı':'ateş karşı kenara ulaşmadı');txt('v-pTxt',p.toFixed(4).replace('.',','));}
+$('c-p').addEventListener('input',upd);$('c-seed').addEventListener('input',upd);upd();
+})();
+</script>
+</body>
+</html>

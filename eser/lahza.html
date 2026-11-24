@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>025 · Lahza — Külliyat</title>
+<meta name="description" content="Bir bakışın süresi. Üç yazı sistemi, dört kelime ailesi, tek bir sezgi: bilmek bir görme biçimidir.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:900px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:900px;height:900px;transform-origin:0 0}
+.ctl{max-width:900px;margin:18px auto 0;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink)}
+.ctl label{display:flex;align-items:center;gap:10px;min-height:44px}
+.ctl input[type=range]{width:min(260px,60vw);accent-color:#1C1B19}
+.ctl select,.ctl input[type=number]{font:inherit;padding:8px 10px;min-height:44px;border:1px solid var(--line);background:#F1EFEA;color:var(--ink)}
+.ctl output{min-width:6ch;color:var(--soft)}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.cap .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:34px 0 10px}
+.cap .b{font-size:19px;line-height:1.5;margin:0 0 12px}
+.cap .b.sp{color:var(--soft)}
+.cap .m{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;margin-right:8px;font-style:normal;white-space:nowrap}
+.cap .live{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#8F3517;margin:0 0 12px}
+.cap .lej{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--soft);line-height:1.8;margin-top:22px}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>025 / 027</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art" style="background:#1C1B19">
+<svg width="900" height="900" viewBox="0 0 900 900" role="img" aria-label="İç içe göz biçimleri, merkezde Arapça lahza kelimesi, göz ucundan dışarı uzanan ince bir bakış çizgisi">
+      <path d="M100 450Q450 150 800 450Q450 750 100 450Z" fill="none" stroke="#EFEBE3" stroke-opacity="0.85" stroke-width="1.4"></path>
+      <path d="M150 450Q450 210 750 450Q450 690 150 450Z" fill="none" stroke="#EFEBE3" stroke-opacity="0.45" stroke-width="1"></path>
+      <path d="M200 450Q450 270 700 450Q450 630 200 450Z" fill="none" stroke="#EFEBE3" stroke-opacity="0.3" stroke-width="1"></path>
+      <path d="M250 450Q450 330 650 450Q450 570 250 450Z" fill="none" stroke="#EFEBE3" stroke-opacity="0.18" stroke-width="1"></path>
+      <path  stroke="#C9A24A" stroke-width="1" fill="none" id="e1"></path>
+      <circle cx="450" cy="450" r="96" fill="none" stroke="#C9A24A" stroke-width="1.6"></circle>
+      <text x="450" y="472" text-anchor="middle" direction="rtl" font-family="Amiri, serif" font-size="66" fill="#EFEBE3">لحظة</text>
+      <path d="M800 450L884 318" stroke="#C9A24A" stroke-width="1.2" fill="none"></path>
+      <path d="M836 450A36 36 0 0 0 819 419" stroke="#C9A24A" stroke-width="1" fill="none"></path>
+      <circle cx="800" cy="450" r="3.5" fill="#C9A24A"></circle>
+      <text x="792" y="490" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1.5" fill="#B9B2A3">laḥāẓ · göz ucu</text>
+      <text x="64" y="118" font-family="Noto Serif, serif" font-style="italic" font-size="30" fill="#EFEBE3" fill-opacity="0.8">θεωρός → θεωρία</text>
+      <text x="64" y="148" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1.5" fill="#B9B2A3">seyirci-elçi → kuram</text>
+      <text x="64" y="776" font-family="Amiri, serif" font-size="34" fill="#EFEBE3" fill-opacity="0.8">نظر ← نظریه</text>
+      <text x="64" y="806" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1.5" fill="#B9B2A3">nazar → nazariye · bakış → kuram</text>
+      <text x="836" y="776" text-anchor="end" font-family="Cormorant Garamond, serif" font-style="italic" font-size="34" fill="#EFEBE3">lahza</text>
+      <text x="836" y="806" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="1.5" fill="#B9B2A3">an · bir bakışlık süre</text>
+      <text x="836" y="846" text-anchor="end" font-family="Cormorant Garamond, serif" font-style="italic" font-size="26" fill="#C9A24A">mülâhaza</text>
+    </svg>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button>
+
+</div>
+<div class="cap">
+<div class="no">025 · 900 × 900 · Eşikler III / V</div>
+<h1>Lahza</h1>
+<p class="tur">tipografik kompozisyon; Arapça, Yunanca, Osmanlıca, Türkçe</p>
+<p class="tez">Bir bakışın süresi. Üç yazı sistemi, dört kelime ailesi, tek bir sezgi: bilmek bir görme biçimidir.</p>
+<p class="lej">■ kesin — ispatlanmış ya da ölçülmüş<br>◆ makul — literatürde dayanağı olan yorum<br>○ spekülatif — önerilmiş, sınanmamış okuma</p>
+<p class="k">Gözlem — yalnızca görünen</p>
+<p class="b">Giderek daralan dört göz çizgisi; merkezde, altmış kertikli bir kadranın içinde Arapça <span style="font-family: Amiri, serif; font-size: 16px">لحظة</span>. Gözün sağ ucundan dışarı tek bir ince çizgi çıkıyor, köşede küçük bir açı yayı. Köşelerde Yunanca, Osmanlıca ve Türkçe kelimeler.</p>
+<p class="k">Yapı</p>
+<p class="b"><span class="m">■ KESİN</span>Türkçe <i>lahza</i> (an) Arapça <i>laḥẓa</i>’dan gelir; kök l-ḥ-ẓ, “göz ucuyla bakmak”. Klasik sözlüklerde <i>laḥāẓ</i> gözün şakağa bakan köşesidir. Aynı kökün III. bab masdarı <i>mulāḥaẓa</i>: dikkatle bakma, gözlem, düşünme. Yani Türkçede “an” demek, kökünde bir bakış demektir.</p>
+<p class="b"><span class="m">■ KESİN</span>Osmanlıca <i>nazariye</i> (kuram) <i>nazar</i>’dan (bakış) türer. Yunanca <i>theōria</i> da <i>theōros</i>’tan gelir: bayram ya da kehanet yerine gözlemci olarak gönderilen resmî elçi. İki gelenek, birbirinden bağımsız biçimde, “kuram”ı bir bakıştan türetmiştir.</p>
+<p class="k">Olası okumalar</p>
+<p class="b"><span class="m">◆ MAKUL</span>Bu, dillerde çok yaygın bir kavramsal metafordur: “bilmek görmektir” (Sweetser 1990; Lakoff–Johnson). Latince <i>videre</i> ile Almanca <i>wissen</i>’in aynı Hint-Avrupa kökünden gelmesi de aynı örüntüye düşer.</p>
+<p class="b sp"><span class="m">○ SPEKÜLATİF</span><i>Lahza</i>’dan <i>mülâhaza</i>’ya geçiş, bir anı süreklileştirme çabası gibi okunabilir: kuram, uzatılmış bir bakış. Dikkat: bu etimolojiden felsefeye bir sıçramadır, kanıt değil; bir kelimenin geçmişi, bugünkü anlamını belirlemez.</p>
+<p class="k">Size kalan</p>
+<p class="b">Bir kavramı “göz ucuyla” mı, karşıdan mı daha iyi görürsünüz? Lügat’e girecek bir sonraki kelime hangi duyudan gelecek — ve Türkçede bakış ile düşünce arasında köprü kuran başka hangi kelimeleri biliyorsunuz?</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="esik.html">← 024 · Eşik</a><a href="dogaclama.html">026 · Doğaçlama →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=900,H=900;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i);};
+function set(id,attr,v){var e=$(id);if(e)e.setAttribute(attr,v);}
+function txt(cls,v){var es=document.querySelectorAll('.'+cls);for(var i=0;i<es.length;i++)es[i].textContent=v;}
+function BIND(V){set('e1','d',V.ticks);}
+
+var d='';for(var i=0;i<60;i++){var a=2*Math.PI*i/60-Math.PI/2,r1=104,r2=i%5===0?118:110;d+='M'+(450+r1*Math.cos(a)).toFixed(1)+' '+(450+r1*Math.sin(a)).toFixed(1)+'L'+(450+r2*Math.cos(a)).toFixed(1)+' '+(450+r2*Math.sin(a)).toFixed(1);}
+BIND({ticks:d});
+})();
+</script>
+</body>
+</html>
