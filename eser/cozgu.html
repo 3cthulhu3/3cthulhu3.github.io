@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>011 · Çözgü ve Atkı — Külliyat</title>
+<meta name="description" content="deterministik kuraldan çıkan deseni kimse yazmamıştır">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:1600px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:1600px;height:1100px;transform-origin:0 0}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+
+
+a{color:#555}a:hover{color:#111}
+
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>011 / 022</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art">
+<div style="width: 1600px; height: 1100px; position: relative; overflow: hidden; background: #EDE6D6; color: #1E1B17; font-family: 'IBM Plex Sans', sans-serif;">
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" style="position: absolute; left: 0; top: 0;" role="img" aria-label="Kural 30 hücresel otomatıyla üretilmiş bir dokuma deseni: tek bir siyah hücreden başlayan, 44 satırda aşağı doğru genişleyen üçgen, sol kenarı düzenli, sağ tarafı kaotik. Altında desenin son satırını kodlayan bir jakar delikli kartı.">
+<defs>
+<pattern id="warp" patternUnits="userSpaceOnUse" width="16" height="16"><line x1="8" y1="0" x2="8" y2="16" stroke="#8A7F6B" stroke-width="0.7" opacity="0.5"></line><line x1="0" y1="8" x2="16" y2="8" stroke="#8A7F6B" stroke-width="0.7" opacity="0.5"></line></pattern>
+</defs>
+<rect x="224" y="200" width="1152" height="704" fill="url(#warp)"></rect>
+<rect x="224" y="200" width="1152" height="704" fill="none" stroke="currentColor" stroke-width="0.8"></rect>
+<path stroke="#1E1B17" stroke-width="14" fill="none" d="M800,208h16 M784,224h48 M768,240h32 M832,240h16 M752,256h32 M800,256h64 M736,272h32 M800,272h16 M864,272h16 M720,288h32 M768,288h64 M848,288h48 M704,304h32 M768,304h16 M848,304h16 M896,304h16 M688,320h32 M736,320h64 M832,320h96 M672,336h32 M736,336h16 M800,336h48 M928,336h16 M656,352h32 M704,352h64 M784,352h32 M848,352h16 M912,352h48 M640,368h32 M704,368h16 M784,368h16 M816,368h64 M896,368h32 M960,368h16 M624,384h32 M672,384h64 M768,384h32 M816,384h16 M896,384h16 M928,384h64 M608,400h32 M672,400h16 M736,400h48 M816,400h32 M880,400h32 M928,400h16 M992,400h16 M592,416h32 M640,416h64 M720,416h32 M784,416h48 M848,416h48 M928,416h32 M976,416h48 M576,432h32 M640,432h16 M720,432h16 M752,432h48 M848,432h16 M896,432h48 M976,432h16 M1024,432h16 M560,448h32 M608,448h64 M704,448h32 M752,448h16 M800,448h16 M832,448h80 M944,448h112 M544,464h32 M608,464h16 M672,464h48 M752,464h64 M832,464h16 M912,464h48 M1056,464h16 M528,480h32 M576,480h64 M656,480h32 M720,480h48 M832,480h32 M896,480h32 M960,480h16 M1040,480h48 M512,496h32 M576,496h16 M656,496h16 M688,496h48 M768,496h16 M816,496h32 M864,496h48 M928,496h64 M1024,496h32 M1088,496h16 M496,512h32 M544,512h64 M640,512h32 M688,512h16 M736,512h96 M864,512h16 M928,512h16 M992,512h48 M1056,512h64 M480,528h32 M544,528h16 M608,528h48 M688,528h64 M832,528h64 M912,528h48 M976,528h32 M1056,528h16 M1120,528h16 M464,544h32 M512,544h64 M592,544h32 M656,544h48 M752,544h16 M816,544h32 M912,544h16 M976,544h16 M1008,544h16 M1040,544h48 M1104,544h48 M448,560h32 M512,560h16 M592,560h16 M624,560h48 M704,560h16 M736,560h48 M800,560h32 M848,560h16 M896,560h48 M960,560h32 M1008,560h16 M1040,560h16 M1104,560h16 M1152,560h16 M432,576h32 M480,576h64 M576,576h32 M624,576h16 M672,576h48 M736,576h16 M800,576h16 M848,576h64 M960,576h16 M1008,576h16 M1040,576h32 M1088,576h96 M416,592h32 M480,592h16 M544,592h48 M624,592h64 M736,592h32 M784,592h80 M912,592h16 M944,592h80 M1040,592h16 M1088,592h16 M1184,592h16 M400,608h32 M448,608h64 M528,608h32 M592,608h48 M688,608h16 M720,608h32 M784,608h16 M864,608h16 M896,608h32 M944,608h16 M1040,608h80 M1168,608h48 M384,624h32 M448,624h16 M528,624h16 M560,624h48 M640,624h16 M672,624h32 M720,624h16 M752,624h64 M848,624h32 M896,624h16 M944,624h32 M1024,624h32 M1120,624h16 M1152,624h32 M1216,624h16 M368,640h32 M416,640h64 M512,640h32 M560,640h16 M608,640h48 M672,640h16 M720,640h16 M752,640h16 M816,640h48 M896,640h64 M976,640h16 M1008,640h32 M1056,640h16 M1104,640h32 M1152,640h16 M1184,640h64 M352,656h32 M416,656h16 M480,656h48 M560,656h64 M672,656h64 M752,656h32 M800,656h32 M864,656h48 M976,656h16 M1008,656h16 M1056,656h64 M1152,656h16 M1184,656h16 M1248,656h16 M336,672h32 M384,672h64 M464,672h32 M528,672h48 M624,672h16 M656,672h32 M752,672h16 M800,672h16 M832,672h48 M912,672h16 M960,672h32 M1008,672h64 M1120,672h48 M1184,672h32 M1232,672h48 M320,688h32 M384,688h16 M464,688h16 M496,688h48 M576,688h16 M608,688h32 M656,688h16 M688,688h16 M736,688h80 M832,688h16 M880,688h96 M1008,688h16 M1072,688h16 M1104,688h32 M1184,688h16 M1232,688h16 M1280,688h16 M304,704h32 M352,704h64 M448,704h32 M496,704h16 M544,704h48 M608,704h16 M656,704h16 M688,704h64 M832,704h64 M976,704h64 M1056,704h32 M1104,704h16 M1136,704h16 M1168,704h144 M288,720h32 M352,720h16 M416,720h48 M496,720h64 M608,720h64 M688,720h16 M752,720h16 M816,720h32 M896,720h16 M960,720h32 M1056,720h16 M1104,720h16 M1136,720h16 M1168,720h16 M1312,720h16 M272,736h32 M320,736h64 M400,736h32 M464,736h48 M560,736h16 M592,736h32 M688,736h32 M736,736h48 M800,736h32 M848,736h16 M880,736h48 M944,736h32 M992,736h16 M1040,736h80 M1136,736h16 M1168,736h32 M1296,736h48 M256,752h32 M320,752h16 M400,752h16 M432,752h48 M512,752h16 M544,752h32 M592,752h16 M624,752h16 M672,752h32 M736,752h16 M800,752h16 M848,752h16 M880,752h16 M944,752h16 M992,752h64 M1136,752h16 M1168,752h16 M1200,752h16 M1280,752h32 M1344,752h16 M240,768h32 M288,768h64 M384,768h32 M432,768h16 M480,768h48 M544,768h16 M592,768h16 M624,768h64 M704,768h64 M784,768h80 M880,768h32 M928,768h80 M1056,768h16 M1120,768h32 M1168,768h16 M1200,768h32 M1264,768h32 M1312,768h64 M240,784h16 M288,784h16 M352,784h48 M432,784h64 M544,784h64 M624,784h16 M704,784h16 M784,784h16 M880,784h16 M928,784h16 M1008,784h16 M1040,784h48 M1104,784h32 M1168,784h16 M1200,784h16 M1232,784h48 M1312,784h16 M224,800h96 M336,800h32 M400,800h48 M496,800h16 M528,800h32 M624,800h32 M688,800h48 M768,800h48 M864,800h96 M992,800h32 M1040,800h16 M1104,800h16 M1136,800h48 M1200,800h16 M1232,800h16 M1280,800h64 M224,816h16 M336,816h16 M368,816h48 M448,816h16 M480,816h32 M528,816h16 M560,816h16 M608,816h32 M656,816h48 M736,816h48 M816,816h16 M848,816h32 M960,816h48 M1040,816h32 M1088,816h32 M1136,816h16 M1200,816h16 M1232,816h64 M1344,816h32 M240,832h16 M320,832h32 M368,832h16 M416,832h48 M480,832h16 M528,832h16 M560,832h64 M656,832h16 M704,832h48 M784,832h48 M848,832h16 M880,832h16 M944,832h32 M1008,832h48 M1088,832h16 M1136,832h32 M1184,832h32 M1232,832h16 M1296,832h16 M1328,832h32 M224,848h48 M304,848h32 M368,848h64 M480,848h64 M560,848h16 M624,848h96 M752,848h48 M848,848h16 M880,848h32 M928,848h32 M976,848h48 M1056,848h96 M1184,848h16 M1232,848h32 M1280,848h32 M1328,848h16 M1360,848h16 M272,864h48 M336,864h48 M432,864h16 M464,864h32 M560,864h32 M608,864h32 M720,864h48 M800,864h16 M832,864h32 M880,864h16 M928,864h16 M976,864h16 M1024,864h48 M1152,864h96 M1280,864h16 M1328,864h16 M1360,864h16 M224,880h16 M256,880h32 M336,880h16 M384,880h16 M416,880h32 M464,880h16 M496,880h16 M544,880h32 M608,880h16 M640,880h16 M704,880h32 M768,880h48 M832,880h16 M880,880h160 M1072,880h16 M1136,880h32 M1248,880h96 M1360,880h16 M256,896h16 M288,896h16 M320,896h80 M416,896h16 M464,896h16 M496,896h64 M576,896h48 M640,896h32 M688,896h32 M736,896h48 M832,896h64 M1040,896h64 M1120,896h32 M1168,896h16 M1232,896h32 M1360,896h16"></path>
+<!-- the seed cell -->
+<rect x="800" y="200" width="16" height="16" fill="#C0391B"></rect>
+<path d="M808,196 V168" stroke="#C0391B" stroke-width="1"></path>
+<text x="808" y="160" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#C0391B">tek hücre · bütün başlangıç</text>
+<!-- side labels -->
+<text x="212" y="212" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity="0.7">t = 0</text>
+<text x="212" y="900" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity="0.7">t = 43</text>
+<text x="300" y="930" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity="0.7">← sol kenar: periyodik, öngörülebilir</text>
+<text x="1376" y="930" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity="0.7">sağ iç: kaotik, sıkıştırılamaz →</text>
+
+<!-- jacquard card for the last row -->
+<g transform="translate(224 985)">
+<rect x="0" y="0" width="1152" height="56" rx="4" fill="#D9C9A3" stroke="currentColor" stroke-width="0.8"></rect>
+<path d="M0,0 L14,0 L0,14 Z" fill="currentColor" opacity="0.4"></path>
+<g fill="#EDE6D6" stroke="currentColor" stroke-width="0.6">
+<circle cx="40" cy="28" r="5"></circle><circle cx="72" cy="28" r="5"></circle><circle cx="104" cy="28" r="5"></circle><circle cx="120" cy="28" r="5"></circle><circle cx="136" cy="28" r="5"></circle><circle cx="152" cy="28" r="5"></circle><circle cx="168" cy="28" r="5"></circle><circle cx="200" cy="28" r="5"></circle><circle cx="248" cy="28" r="5"></circle><circle cx="280" cy="28" r="5"></circle><circle cx="296" cy="28" r="5"></circle><circle cx="312" cy="28" r="5"></circle><circle cx="328" cy="28" r="5"></circle><circle cx="360" cy="28" r="5"></circle><circle cx="376" cy="28" r="5"></circle><circle cx="392" cy="28" r="5"></circle><circle cx="424" cy="28" r="5"></circle><circle cx="440" cy="28" r="5"></circle><circle cx="472" cy="28" r="5"></circle><circle cx="488" cy="28" r="5"></circle><circle cx="520" cy="28" r="5"></circle><circle cx="536" cy="28" r="5"></circle><circle cx="552" cy="28" r="5"></circle><circle cx="616" cy="28" r="5"></circle><circle cx="632" cy="28" r="5"></circle><circle cx="648" cy="28" r="5"></circle><circle cx="664" cy="28" r="5"></circle><circle cx="824" cy="28" r="5"></circle><circle cx="840" cy="28" r="5"></circle><circle cx="856" cy="28" r="5"></circle><circle cx="872" cy="28" r="5"></circle><circle cx="904" cy="28" r="5"></circle><circle cx="920" cy="28" r="5"></circle><circle cx="952" cy="28" r="5"></circle><circle cx="1016" cy="28" r="5"></circle><circle cx="1032" cy="28" r="5"></circle><circle cx="1144" cy="28" r="5"></circle>
+</g>
+</g>
+<text x="224" y="1070" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity="0.7">kart 44 / 44 · son satır · bir sonraki satır bu karttan türetilir ama bu kartta yazılı değildir</text>
+</svg>
+
+<div style="position: absolute; left: 100px; top: 48px; width: 700px;">
+<div style="font-size: 34px; font-weight: 600; letter-spacing: -0.01em;">Çözgü ve Atkı</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; margin-top: 6px; opacity: .72;">kural 30 · wolfram 1983 · 72 çözgü teli, 44 atkı sırası · tohum: ortadaki tek hücre</div>
+</div>
+<p style="position: absolute; right: 100px; top: 44px; width: 560px; margin: 0; font-size: 15.5px; line-height: 1.5; text-align: right;">Çözgü sabittir: kural. Atkı her sırada kuraldan doğar: her hücre yalnızca üç komşusuna bakar. Deseni kimse çizmemiştir; desen hiçbir yerde kuraldan daha kısa yazılamaz. Jacquard (1804) tezgâha deseni kartla verdi. Burada kart deseni içermez, sadece onu doğuran son hâli.</p>
+</div>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button></div>
+<div class="cap">
+<div class="no">011 · 1600 × 1100</div>
+<h1>Çözgü ve Atkı</h1>
+<p class="tur">jakar dokuması</p>
+<p class="tez">deterministik kuraldan çıkan deseni kimse yazmamıştır</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="defter.html">← 010 · Defter-i Kebir</a><a href="stemma.html">012 · Kayıp Asıl →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=1600,H=1100;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+</body>
+</html>

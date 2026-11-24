@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>018 · On Üç El — Külliyat</title>
+<meta name="description" content="malzeme: on üç kişinin yazdığı 1797 rakam (UCI optik rakamlar), t-SNE ve doğrusal atamayla ızgaraya dizilmiş, en yakın ortalamanın yanlış okuduğu 171&#x27;i turuncu">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:1440px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:1440px;height:1620px;transform-origin:0 0}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+
+
+a{color:#26324F}a:hover{color:#101624}
+
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>018 / 022</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art">
+<div style="width: 1440px; height: 1620px; position: relative; overflow: hidden; background: #E8E6E2; color: #1E2638; font-family: 'Space Grotesk', system-ui, sans-serif;">
+<div style="position: absolute; left: 78px; top: 52px; right: 78px; display: flex; justify-content: space-between; align-items: flex-end;">
+<div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; line-height: 1;">On Üç El</div>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.7; text-align: right; opacity: .8;">1797 rakam · 43 × 42 ızgara · her kare 8 × 8, 17 gri düzey<br>mavi: okunan · turuncu: yanlış okunan</div>
+</div>
+<img src="../img/39414049d881ef443b5fb0fc9cc54f56.png" alt="Elle yazılmış 1797 rakamın, benzerliklerine göre yan yana dizildiği büyük bir mozaik. Sıfırlar, altılar, dörtler, yediler, ikiler, birler, üçler, dokuzlar, beşler ve sekizler ayrı bölgeler oluşturur; bölgeler arasındaki geçişlerde rakamlar birbirine benzemeye başlar. Yanlış okunanlar turuncu: tabanlı birler, sekize kayan üçler, dokuza benzeyen beşler." style="position: absolute; left: 78px; top: 150px; width: 1284px; height: 1254px; image-rendering: pixelated;">
+<div style="position: absolute; left: 78px; top: 1448px; width: 1284px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; font-size: 15px; line-height: 1.55; border-top: 1.5px solid currentColor; padding-top: 18px;">
+<p style="margin: 0;">On üç kişinin formlara yazdığı rakamlar: UCI optik rakam veri kümesinin sınama bölümü (Alpaydın &amp; Kaynak, Boğaziçi Üniversitesi, 1998). 32 × 32 taramanın 4 × 4 bloklarındaki dolu pikseller sayılmış, her rakam 8 × 8 ızgaraya ve 0–16 gri düzeye inmiş. Burada hiçbir rakam çizilmedi; yalnızca yerleştirildi.</p>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.7;">t-SNE (perpleksite 30, tohum 20261116) 64 boyutu ikiye indirir; doğrusal atama (scipy, Jonker–Volgenant) rakamları, toplam kareli uzaklık en küçük olacak biçimde 43 × 42 ızgaraya dağıtır; 9 hücre boş kalır. Turuncu: on sınıf ortalamasından en yakınına göre okununca etiketiyle uyuşmayan 171 rakam. En sık: 5→9 (19), 1→9 (17), 8→1 (14).</p>
+</div>
+</div>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button></div>
+<div class="cap">
+<div class="no">018 · 1440 × 1620</div>
+<h1>On Üç El</h1>
+<p class="tur">piksel mozaiği</p>
+<p class="tez">malzeme: on üç kişinin yazdığı 1797 rakam (UCI optik rakamlar), t-SNE ve doğrusal atamayla ızgaraya dizilmiş, en yakın ortalamanın yanlış okuduğu 171&#x27;i turuncu</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="oynakzemin.html">← 017 · Oynak Zemin</a><a href="ortaksaat.html">019 · Ortak Saat →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=1440,H=1620;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+</body>
+</html>

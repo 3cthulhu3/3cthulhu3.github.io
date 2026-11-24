@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>008 · Holotip — Külliyat</title>
+<meta name="description" content="ad türün ortalamasına değil, tipik olmak zorunda olmayan tek bir bireye çivilenir">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--wall:#E8E6E1;--ink:#1C1B19;--soft:#5E5A53;--line:#C9C5BC}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--wall);color:var(--ink);font-family:"EB Garamond",Georgia,serif}
+a{color:inherit}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:22px clamp(16px,4vw,56px);font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.04em}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+.stage{padding:8px clamp(16px,4vw,56px) 0}
+.frame{width:100%;max-width:1000px;margin:0 auto;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.12),0 12px 40px rgba(0,0,0,.14)}
+.art{width:1000px;height:1450px;transform-origin:0 0}
+.cap{max-width:760px;margin:0 auto;padding:40px clamp(16px,4vw,56px) 24px}
+.cap .no{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--soft);letter-spacing:.06em}
+.cap h1{font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 6px}
+.cap .tur{font-style:italic;font-size:19px;color:var(--soft);margin:0}
+.cap .tez{font-size:21px;line-height:1.45;margin:22px 0 0}
+.full{display:block;margin:14px auto 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--ink);padding:10px 14px;min-height:44px;cursor:pointer}
+.frame.big{overflow:auto;height:auto!important;max-height:85vh}
+.nav{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px clamp(16px,4vw,56px) 56px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;border-top:1px solid var(--line)}
+.nav a{text-decoration:none}.nav a:hover{text-decoration:underline}
+
+
+a{color:#555}a:hover{color:#111}
+
+</style>
+</head>
+<body>
+<header class="top"><a href="../index.html">Külliyat</a><span>008 / 022</span></header>
+<main>
+<div class="stage"><div class="frame" id="frame"><div class="art" id="art">
+<div style="width: 1000px; height: 1450px; position: relative; overflow: hidden; background: #F2EEE2; color: #23221E; font-family: 'EB Garamond', serif;">
+<svg width="1000" height="1450" viewBox="0 0 1000 1450" style="position: absolute; left: 0; top: 0;" role="img" aria-label="Herbaryum levhası. Ortada kurutulmuş bir bitki örneği: gövdesi sağlam, ama dallar uca doğru gittikçe ortadaki üçte birleri çıkarılmış parçalara bölünüyor ve uçlarda toz halinde kareciklere dönüşüyor. Sağ üstte içinde iki boyutlu Cantor tozu bulunan bir parça zarfı. Altta kırmızı holotip etiketi ve daktilo etiket.">
+<!-- örnek: derinlik arttıkça Cantor kesmeleri -->
+<g fill="none" stroke="#4A4630" stroke-linecap="butt">
+<path stroke-width="7" d="M480,1130L473,895"></path>
+<path stroke-width="5" d="M473,895L423,718M473,895L489,741"></path>
+<path stroke-width="3.4" d="M423,718L399,680M376,641L352,603M423,718L431,672M439,626L446,580M489,741L499,703M510,666L520,628M489,741L487,705M485,670L484,634"></path>
+<path stroke-width="2.5" d="M352,603L341,568M331,534L320,500M352,603L329,580M306,558L283,536M446,580L441,549M435,519L429,488M446,580L463,549M480,518L497,487M520,628L519,602M517,575L515,548M520,628L540,604M560,581L579,557M484,634L476,610M467,585L459,560M484,634L490,611M497,588L503,565"></path>
+<path stroke-width="1.9" d="M320,500L320,490M320,481L320,472M319,444L319,435M319,426L319,417M320,500L314,493M308,485L301,478M283,457L276,450M270,443L264,436M283,536L276,534M269,532L262,531M240,525L233,524M225,522L218,520M283,536L279,530M274,524L269,518M255,499L250,493M246,487L241,481M429,488L425,481M420,475L416,468M402,448L398,442M393,435L389,429M429,488L430,481M431,474L432,468M435,447L435,440M436,433L437,426M497,487L498,479M499,470L501,462M504,437L505,429M506,420L507,412M515,548L517,542M518,536L520,530M525,511L526,505M528,498L529,492M515,548L513,542M511,536L508,530M502,511L500,504M498,498L496,492M579,557L585,553M590,548L595,544M612,530L617,525M623,521L628,516M579,557L583,550M587,543L590,536M602,515L606,508M609,501L613,493M459,560L459,554M459,548L458,542M457,524L457,518M457,512L456,506M459,560L456,555M453,550L450,546M440,531L437,527M433,522L430,517M503,565L507,561M511,557L515,552M526,540L530,535M533,531L537,527"></path>
+<path stroke-width="1.4" d="M319,417L317,411M314,405L312,399M306,382L303,377M301,371L299,365M319,417L322,410M325,404L328,398M337,379L339,373M342,367L345,361M264,436L261,430M258,424L255,418M246,400L244,394M241,388L238,381M264,436L258,432M253,427L247,423M231,410L225,405M220,401L214,396M218,520L213,520M208,521L202,521M186,523L181,523M176,524L170,524M218,520L213,517M209,515L204,512M190,505L185,502M180,499L176,497M241,481L236,478M232,475L227,472M214,462L209,459M205,456L200,453M241,481L239,476M237,470L235,464M230,447L228,442M226,436L224,430M389,429L388,423M387,418L386,413M383,397L382,391M381,386L380,381M389,429L385,425M380,422L376,418M363,408L359,404M355,401L351,397M437,426L435,421M433,417L430,412M424,397L421,392M419,387L417,382M437,426L440,422M442,418L445,414M452,401L454,396M457,392L459,388M507,412L506,405M506,399L505,392M502,372L501,365M500,358L499,352M507,412L510,406M513,400L517,394M526,377L529,371M532,365L535,359M529,492L529,487M529,483L529,478M530,464L530,459M530,454L530,449M529,492L531,488M532,483L534,479M539,466L540,461M542,457L543,453M496,492L493,488M491,484L489,480M482,469L479,465M477,461L475,457M496,492L495,487M494,483L492,478M489,465L488,461M487,456L486,452M628,516L633,514M638,511L643,509M658,501L664,499M669,496L674,494M628,516L631,513M634,509L637,505M646,494L649,490M652,487L655,483M613,493L615,488M616,482L618,477M623,460L625,455M626,449L628,444M613,493L618,489M623,485L627,481M641,468L646,463M650,459L655,455M456,506L455,502M453,497L452,493M448,481L447,477M445,473L444,469M456,506L457,502M458,498L459,494M462,482L463,479M464,475L465,471M430,517L427,514M425,511L422,508M413,499L411,496M408,493L405,490M430,517L429,513M427,509L426,506M422,494L421,490M420,487L418,483M537,527L539,523M540,520L541,516M545,506L546,502M548,498L549,495M537,527L541,525M544,523L548,521M559,516L562,514M566,512L570,510"></path>
+<path stroke-width="1.1" d="M299,365L298,360M297,356L297,351M295,337L294,333M293,328L293,323M299,365L296,362M292,358L289,354M280,344L276,340M273,337L270,333M345,361L346,355M347,350L348,345M350,329L351,324M352,319L352,314M238,381L237,377M237,372L237,367M236,353L236,349M235,344L235,339M214,396L209,394M204,391L200,389M185,382L180,379M176,377L171,374M214,396L211,392M208,388L205,384M195,371L192,366M189,362L186,358M170,524L166,525M162,527L158,528M146,532L142,534M138,535L134,537M170,524L167,523M163,522L159,520M147,517L143,516M139,514L135,513M176,497L172,496M168,496L164,495M153,493L149,493M145,492L142,491M200,453L197,451M193,450L189,448M179,444L175,442M171,441L168,439M200,453L197,450M194,447L191,444M182,435L180,433M177,430L174,427M224,430L221,427M218,423L216,420M207,410L204,407M201,403L199,400M224,430L224,425M223,421L222,416M221,402L220,397M220,392L219,387M380,381L380,377M379,373L379,369M377,358L377,354M376,350L376,346M351,397L348,394M345,390L343,386M335,376L333,372M330,369L328,365M351,397L346,396M342,394L338,392M326,388L322,386M318,384L314,383M417,382L416,378M416,375L415,371M413,359L412,355M412,351L411,348M417,382L414,380M412,377L409,374M402,366L399,363M397,360L394,358M459,388L460,384M461,381L461,378M464,367L464,364M465,360L466,357M459,388L462,386M465,384L467,381M476,375L478,373M481,370L484,368M499,352L500,347M501,343L502,338M505,325L506,320M507,316L508,311M499,352L497,348M496,343L494,339M488,327L486,322M484,318L483,314M535,359L538,355M541,351L545,347M554,335L558,330M561,326L564,322M530,449L531,446M532,442L533,439M536,428L537,425M538,421L539,418M543,453L545,450M547,447L549,444M554,436L556,433M558,430L559,428M475,457L474,454M474,451L473,448M471,438L471,435M470,432L470,428M475,457L472,455M470,453L468,450M460,444L458,441M456,439L453,437M486,452L486,448M486,445L486,442M486,432L485,428M485,425L485,422M486,452L485,449M484,446L483,442M480,433L479,430M478,427L477,424M674,494L677,491M680,488L683,485M693,476L696,474M700,471L703,468M655,483L656,479M657,476L658,472M661,462L662,458M663,455L664,451M655,483L659,481M662,480L665,479M674,474L678,473M681,471L684,470M628,444L630,441M633,437L636,434M643,424L646,421M648,418L651,414M628,444L628,440M628,435L628,431M629,418L629,414M629,410L629,406M655,455L659,452M663,449L668,446M680,437L684,435M688,432L693,429M655,455L657,450M659,446L662,442M668,429L670,425M672,421L674,416M444,469L443,466M443,463L442,460M441,452L441,449M440,446L440,443M444,469L443,466M441,463L440,461M437,453L435,450M434,447L433,445M465,471L465,468M465,465L465,462M464,453L464,450M464,447L464,444M405,490L404,488M402,485L401,483M396,476L395,474M393,472L392,469M405,490L403,489M400,488L398,486M390,483L388,482M385,481L383,480M418,483L416,480M414,478L413,475M407,468L405,466M403,463L401,461M418,483L418,480M418,477L418,474M417,465L417,463M416,460L416,457M549,495L550,492M552,490L553,487M557,480L558,477M559,475L561,472M549,495L549,492M550,489L550,486M551,477L551,475M551,472L552,469M570,510L572,509M574,507L576,505M583,501L585,499M587,498L590,496M570,510L573,509M576,509L579,508M588,505L591,505M594,504L597,503"></path>
+</g>
+<!-- uçlarda toz -->
+<path fill="#4A4630" d="M259.6,322.8h2.3v2.3h-2.3zM259.6,327.4h2.3v2.3h-2.3zM259.6,336.8h2.3v2.3h-2.3zM259.6,341.4h2.3v2.3h-2.3zM264.2,322.8h2.3v2.3h-2.3zM264.2,327.4h2.3v2.3h-2.3zM264.2,336.8h2.3v2.3h-2.3zM264.2,341.4h2.3v2.3h-2.3zM273.6,322.8h2.3v2.3h-2.3zM273.6,327.4h2.3v2.3h-2.3zM273.6,336.8h2.3v2.3h-2.3zM273.6,341.4h2.3v2.3h-2.3zM278.2,322.8h2.3v2.3h-2.3zM278.2,327.4h2.3v2.3h-2.3zM278.2,336.8h2.3v2.3h-2.3zM278.2,341.4h2.3v2.3h-2.3zM342.0,303.0h2.3v2.3h-2.3zM342.0,307.7h2.3v2.3h-2.3zM342.0,317.0h2.3v2.3h-2.3zM342.0,321.7h2.3v2.3h-2.3zM346.6,303.0h2.3v2.3h-2.3zM346.6,307.7h2.3v2.3h-2.3zM346.6,317.0h2.3v2.3h-2.3zM346.6,321.7h2.3v2.3h-2.3zM356.0,303.0h2.3v2.3h-2.3zM356.0,307.7h2.3v2.3h-2.3zM356.0,317.0h2.3v2.3h-2.3zM356.0,321.7h2.3v2.3h-2.3zM360.6,303.0h2.3v2.3h-2.3zM360.6,307.7h2.3v2.3h-2.3zM360.6,317.0h2.3v2.3h-2.3zM360.6,321.7h2.3v2.3h-2.3zM131.1,480.9h2.3v2.3h-2.3zM131.1,485.5h2.3v2.3h-2.3zM131.1,494.9h2.3v2.3h-2.3zM131.1,499.5h2.3v2.3h-2.3zM135.7,480.9h2.3v2.3h-2.3zM135.7,485.5h2.3v2.3h-2.3zM135.7,494.9h2.3v2.3h-2.3zM135.7,499.5h2.3v2.3h-2.3zM145.1,480.9h2.3v2.3h-2.3zM145.1,485.5h2.3v2.3h-2.3zM145.1,494.9h2.3v2.3h-2.3zM145.1,499.5h2.3v2.3h-2.3zM149.7,480.9h2.3v2.3h-2.3zM149.7,485.5h2.3v2.3h-2.3zM149.7,494.9h2.3v2.3h-2.3zM149.7,499.5h2.3v2.3h-2.3zM188.1,389.5h2.3v2.3h-2.3zM188.1,394.1h2.3v2.3h-2.3zM188.1,403.5h2.3v2.3h-2.3zM188.1,408.1h2.3v2.3h-2.3zM192.8,389.5h2.3v2.3h-2.3zM192.8,394.1h2.3v2.3h-2.3zM192.8,403.5h2.3v2.3h-2.3zM192.8,408.1h2.3v2.3h-2.3zM202.1,389.5h2.3v2.3h-2.3zM202.1,394.1h2.3v2.3h-2.3zM202.1,403.5h2.3v2.3h-2.3zM202.1,408.1h2.3v2.3h-2.3zM206.8,389.5h2.3v2.3h-2.3zM206.8,394.1h2.3v2.3h-2.3zM206.8,403.5h2.3v2.3h-2.3zM206.8,408.1h2.3v2.3h-2.3zM553.7,311.8h2.3v2.3h-2.3zM553.7,316.5h2.3v2.3h-2.3zM553.7,325.8h2.3v2.3h-2.3zM553.7,330.5h2.3v2.3h-2.3zM558.3,311.8h2.3v2.3h-2.3zM558.3,316.5h2.3v2.3h-2.3zM558.3,325.8h2.3v2.3h-2.3zM558.3,330.5h2.3v2.3h-2.3zM567.7,311.8h2.3v2.3h-2.3zM567.7,316.5h2.3v2.3h-2.3zM567.7,325.8h2.3v2.3h-2.3zM567.7,330.5h2.3v2.3h-2.3zM572.3,311.8h2.3v2.3h-2.3zM572.3,316.5h2.3v2.3h-2.3zM572.3,325.8h2.3v2.3h-2.3zM572.3,330.5h2.3v2.3h-2.3zM528.5,407.1h2.3v2.3h-2.3zM528.5,411.7h2.3v2.3h-2.3zM528.5,421.1h2.3v2.3h-2.3zM528.5,425.7h2.3v2.3h-2.3zM533.2,407.1h2.3v2.3h-2.3zM533.2,411.7h2.3v2.3h-2.3zM533.2,421.1h2.3v2.3h-2.3zM533.2,425.7h2.3v2.3h-2.3zM542.5,407.1h2.3v2.3h-2.3zM542.5,411.7h2.3v2.3h-2.3zM542.5,421.1h2.3v2.3h-2.3zM542.5,425.7h2.3v2.3h-2.3zM547.2,407.1h2.3v2.3h-2.3zM547.2,411.7h2.3v2.3h-2.3zM547.2,421.1h2.3v2.3h-2.3zM547.2,425.7h2.3v2.3h-2.3zM459.3,418.0h2.3v2.3h-2.3zM459.3,422.6h2.3v2.3h-2.3zM459.3,432.0h2.3v2.3h-2.3zM459.3,436.6h2.3v2.3h-2.3zM463.9,418.0h2.3v2.3h-2.3zM463.9,422.6h2.3v2.3h-2.3zM463.9,432.0h2.3v2.3h-2.3zM463.9,436.6h2.3v2.3h-2.3zM473.3,418.0h2.3v2.3h-2.3zM473.3,422.6h2.3v2.3h-2.3zM473.3,432.0h2.3v2.3h-2.3zM473.3,436.6h2.3v2.3h-2.3zM477.9,418.0h2.3v2.3h-2.3zM477.9,422.6h2.3v2.3h-2.3zM477.9,432.0h2.3v2.3h-2.3zM477.9,436.6h2.3v2.3h-2.3zM442.6,426.4h2.3v2.3h-2.3zM442.6,431.1h2.3v2.3h-2.3zM442.6,440.4h2.3v2.3h-2.3zM442.6,445.1h2.3v2.3h-2.3zM447.3,426.4h2.3v2.3h-2.3zM447.3,431.1h2.3v2.3h-2.3zM447.3,440.4h2.3v2.3h-2.3zM447.3,445.1h2.3v2.3h-2.3zM456.6,426.4h2.3v2.3h-2.3zM456.6,431.1h2.3v2.3h-2.3zM456.6,440.4h2.3v2.3h-2.3zM456.6,445.1h2.3v2.3h-2.3zM461.3,426.4h2.3v2.3h-2.3zM461.3,431.1h2.3v2.3h-2.3zM461.3,440.4h2.3v2.3h-2.3zM461.3,445.1h2.3v2.3h-2.3zM474.8,411.1h2.3v2.3h-2.3zM474.8,415.7h2.3v2.3h-2.3zM474.8,425.1h2.3v2.3h-2.3zM474.8,429.7h2.3v2.3h-2.3zM479.4,411.1h2.3v2.3h-2.3zM479.4,415.7h2.3v2.3h-2.3zM479.4,425.1h2.3v2.3h-2.3zM479.4,429.7h2.3v2.3h-2.3zM488.8,411.1h2.3v2.3h-2.3zM488.8,415.7h2.3v2.3h-2.3zM488.8,425.1h2.3v2.3h-2.3zM488.8,429.7h2.3v2.3h-2.3zM493.4,411.1h2.3v2.3h-2.3zM493.4,415.7h2.3v2.3h-2.3zM493.4,425.1h2.3v2.3h-2.3zM493.4,429.7h2.3v2.3h-2.3zM653.5,440.5h2.3v2.3h-2.3zM653.5,445.2h2.3v2.3h-2.3zM653.5,454.5h2.3v2.3h-2.3zM653.5,459.2h2.3v2.3h-2.3zM658.2,440.5h2.3v2.3h-2.3zM658.2,445.2h2.3v2.3h-2.3zM658.2,454.5h2.3v2.3h-2.3zM658.2,459.2h2.3v2.3h-2.3zM667.5,440.5h2.3v2.3h-2.3zM667.5,445.2h2.3v2.3h-2.3zM667.5,454.5h2.3v2.3h-2.3zM667.5,459.2h2.3v2.3h-2.3zM672.2,440.5h2.3v2.3h-2.3zM672.2,445.2h2.3v2.3h-2.3zM672.2,454.5h2.3v2.3h-2.3zM672.2,459.2h2.3v2.3h-2.3zM618.5,395.3h2.3v2.3h-2.3zM618.5,399.9h2.3v2.3h-2.3zM618.5,409.3h2.3v2.3h-2.3zM618.5,413.9h2.3v2.3h-2.3zM623.1,395.3h2.3v2.3h-2.3zM623.1,399.9h2.3v2.3h-2.3zM623.1,409.3h2.3v2.3h-2.3zM623.1,413.9h2.3v2.3h-2.3zM632.5,395.3h2.3v2.3h-2.3zM632.5,399.9h2.3v2.3h-2.3zM632.5,409.3h2.3v2.3h-2.3zM632.5,413.9h2.3v2.3h-2.3zM637.1,395.3h2.3v2.3h-2.3zM637.1,399.9h2.3v2.3h-2.3zM637.1,409.3h2.3v2.3h-2.3zM637.1,413.9h2.3v2.3h-2.3zM381.5,458.8h2.3v2.3h-2.3zM381.5,463.4h2.3v2.3h-2.3zM381.5,472.8h2.3v2.3h-2.3zM381.5,477.4h2.3v2.3h-2.3zM386.1,458.8h2.3v2.3h-2.3zM386.1,463.4h2.3v2.3h-2.3zM386.1,472.8h2.3v2.3h-2.3zM386.1,477.4h2.3v2.3h-2.3zM395.5,458.8h2.3v2.3h-2.3zM395.5,463.4h2.3v2.3h-2.3zM395.5,472.8h2.3v2.3h-2.3zM395.5,477.4h2.3v2.3h-2.3zM400.1,458.8h2.3v2.3h-2.3zM400.1,463.4h2.3v2.3h-2.3zM400.1,472.8h2.3v2.3h-2.3zM400.1,477.4h2.3v2.3h-2.3zM541.1,458.3h2.3v2.3h-2.3zM541.1,462.9h2.3v2.3h-2.3zM541.1,472.3h2.3v2.3h-2.3zM541.1,476.9h2.3v2.3h-2.3zM545.8,458.3h2.3v2.3h-2.3zM545.8,462.9h2.3v2.3h-2.3zM545.8,472.3h2.3v2.3h-2.3zM545.8,476.9h2.3v2.3h-2.3zM555.1,458.3h2.3v2.3h-2.3zM555.1,462.9h2.3v2.3h-2.3zM555.1,472.3h2.3v2.3h-2.3zM555.1,476.9h2.3v2.3h-2.3zM559.8,458.3h2.3v2.3h-2.3zM559.8,462.9h2.3v2.3h-2.3zM559.8,472.3h2.3v2.3h-2.3zM559.8,476.9h2.3v2.3h-2.3zM579.1,485.5h2.3v2.3h-2.3zM579.1,490.1h2.3v2.3h-2.3zM579.1,499.5h2.3v2.3h-2.3zM579.1,504.1h2.3v2.3h-2.3zM583.8,485.5h2.3v2.3h-2.3zM583.8,490.1h2.3v2.3h-2.3zM583.8,499.5h2.3v2.3h-2.3zM583.8,504.1h2.3v2.3h-2.3zM593.1,485.5h2.3v2.3h-2.3zM593.1,490.1h2.3v2.3h-2.3zM593.1,499.5h2.3v2.3h-2.3zM593.1,504.1h2.3v2.3h-2.3zM597.8,485.5h2.3v2.3h-2.3zM597.8,490.1h2.3v2.3h-2.3zM597.8,499.5h2.3v2.3h-2.3zM597.8,504.1h2.3v2.3h-2.3z"></path>
+<!-- montaj bantları -->
+<g fill="#F2EEE2" stroke="currentColor" stroke-width="0.8" opacity="0.9">
+<rect x="464" y="1040" width="30" height="9"></rect>
+<rect x="461" y="955" width="30" height="9"></rect>
+<rect x="433" y="802" width="30" height="9" transform="rotate(-16 448 806)"></rect>
+<rect x="466" y="814" width="30" height="9" transform="rotate(5 481 818)"></rect>
+</g>
+<!-- parça zarfı -->
+<g fill="none" stroke="currentColor" stroke-width="1">
+<rect x="728" y="104" width="196" height="196"></rect>
+<path d="M728,104L826,150L924,104" stroke-dasharray="4 3"></path>
+</g>
+<path fill="#4A4630" d="M760.0,140.0h4.9v4.9h-4.9zM760.0,149.8h4.9v4.9h-4.9zM760.0,169.3h4.9v4.9h-4.9zM760.0,179.1h4.9v4.9h-4.9zM760.0,228.0h4.9v4.9h-4.9zM760.0,237.8h4.9v4.9h-4.9zM760.0,257.3h4.9v4.9h-4.9zM760.0,267.1h4.9v4.9h-4.9zM769.8,140.0h4.9v4.9h-4.9zM769.8,149.8h4.9v4.9h-4.9zM769.8,169.3h4.9v4.9h-4.9zM769.8,179.1h4.9v4.9h-4.9zM769.8,228.0h4.9v4.9h-4.9zM769.8,237.8h4.9v4.9h-4.9zM769.8,257.3h4.9v4.9h-4.9zM769.8,267.1h4.9v4.9h-4.9zM789.3,140.0h4.9v4.9h-4.9zM789.3,149.8h4.9v4.9h-4.9zM789.3,169.3h4.9v4.9h-4.9zM789.3,179.1h4.9v4.9h-4.9zM789.3,228.0h4.9v4.9h-4.9zM789.3,237.8h4.9v4.9h-4.9zM789.3,257.3h4.9v4.9h-4.9zM789.3,267.1h4.9v4.9h-4.9zM799.1,140.0h4.9v4.9h-4.9zM799.1,149.8h4.9v4.9h-4.9zM799.1,169.3h4.9v4.9h-4.9zM799.1,179.1h4.9v4.9h-4.9zM799.1,228.0h4.9v4.9h-4.9zM799.1,237.8h4.9v4.9h-4.9zM799.1,257.3h4.9v4.9h-4.9zM799.1,267.1h4.9v4.9h-4.9zM848.0,140.0h4.9v4.9h-4.9zM848.0,149.8h4.9v4.9h-4.9zM848.0,169.3h4.9v4.9h-4.9zM848.0,179.1h4.9v4.9h-4.9zM848.0,228.0h4.9v4.9h-4.9zM848.0,237.8h4.9v4.9h-4.9zM848.0,257.3h4.9v4.9h-4.9zM848.0,267.1h4.9v4.9h-4.9zM857.8,140.0h4.9v4.9h-4.9zM857.8,149.8h4.9v4.9h-4.9zM857.8,169.3h4.9v4.9h-4.9zM857.8,179.1h4.9v4.9h-4.9zM857.8,228.0h4.9v4.9h-4.9zM857.8,237.8h4.9v4.9h-4.9zM857.8,257.3h4.9v4.9h-4.9zM857.8,267.1h4.9v4.9h-4.9zM877.3,140.0h4.9v4.9h-4.9zM877.3,149.8h4.9v4.9h-4.9zM877.3,169.3h4.9v4.9h-4.9zM877.3,179.1h4.9v4.9h-4.9zM877.3,228.0h4.9v4.9h-4.9zM877.3,237.8h4.9v4.9h-4.9zM877.3,257.3h4.9v4.9h-4.9zM877.3,267.1h4.9v4.9h-4.9zM887.1,140.0h4.9v4.9h-4.9zM887.1,149.8h4.9v4.9h-4.9zM887.1,169.3h4.9v4.9h-4.9zM887.1,179.1h4.9v4.9h-4.9zM887.1,228.0h4.9v4.9h-4.9zM887.1,237.8h4.9v4.9h-4.9zM887.1,257.3h4.9v4.9h-4.9zM887.1,267.1h4.9v4.9h-4.9z"></path>
+</svg>
+
+<div style="position: absolute; left: 64px; top: 60px; width: 600px; display: flex; flex-direction: column; gap: 10px;">
+<div style="font-size: 46px; font-weight: 500; line-height: 1;">Holotip</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.5;">Botanik adlandırma kuralı (ICN, Md. 7.2) açıkça yazar: bir adın tipi, taksonun en tipik ya da temsilî öğesi olmak zorunda değildir. Ad, bir topluluğun ortalamasına değil tek bir bireye çivilenir. Bu örnek, her dalından ortadaki üçte bir sonsuza dek çıkarılarak büyütüldü; uzunluğu sıfıra giderken noktaları sayılamaz kalır (Cantor, 1883).</p>
+</div>
+
+<div style="position: absolute; left: 728px; top: 310px; width: 196px; font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; line-height: 1.5; opacity: .8;">fragmenta · gradus III<br>64 / 64 kare, alan → 0</div>
+
+<div style="position: absolute; left: 640px; top: 760px; width: 290px; padding: 14px 16px; box-sizing: border-box; background: #FBF9F2; border: 1px solid #23221E;">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; opacity: .75;">ANNOTATIO</div>
+<div style="font-size: 19px; font-style: italic; line-height: 1.35; margin-top: 6px;">Typus non necessario maxime typicus est.</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; margin-top: 8px; opacity: .75;">cf. ICN Art. 7.2</div>
+</div>
+
+<div style="position: absolute; left: 64px; top: 1250px; width: 230px; height: 96px; box-sizing: border-box; border: 2px solid #A3301F; color: #A3301F; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px;">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 500; letter-spacing: 0.14em;">HOLOTYPUS</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em;">specimen unicum</div>
+</div>
+
+<div style="position: absolute; left: 560px; top: 1170px; width: 380px; padding: 18px 20px; box-sizing: border-box; background: #FBF9F2; border: 1px solid #23221E; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; line-height: 1.7;">
+<div style="letter-spacing: 0.1em; font-size: 11px; opacity: .75;">HERBARIUM · KÜLLİYAT · No. 008</div>
+<div style="font-family: 'EB Garamond', serif; font-size: 27px; font-style: italic; margin: 6px 0 2px;">Lacuna cantoriana</div>
+<div style="opacity: .8;">sp. ficta · typus nominis</div>
+<div style="margin-top: 8px;">loc.: ignota</div>
+<div>leg.: ignotus · 12.XI.2026</div>
+<div>det.: —</div>
+<div style="font-size: 11px; opacity: .7; margin-top: 6px;">tohum 202611121702</div>
+</div>
+</div>
+</div></div>
+<button class="full" id="full" type="button" aria-pressed="false">tam boyutta gör</button></div>
+<div class="cap">
+<div class="no">008 · 1000 × 1450</div>
+<h1>Holotip</h1>
+<p class="tur">herbaryum levhası</p>
+<p class="tez">ad türün ortalamasına değil, tipik olmak zorunda olmayan tek bir bireye çivilenir</p>
+</div>
+</main>
+<nav class="nav" aria-label="Eserler arasında gezinme"><a href="mesk.html">← 007 · Meşk</a><a href="paralaks.html">009 · Paralaks →</a></nav>
+<script>
+(function(){var f=document.getElementById('frame'),a=document.getElementById('art'),W=1000,H=1450;
+var b=document.getElementById('full'),big=false;
+function fit(){if(big){a.style.transform='none';f.style.height='';return;}var s=Math.min(1,f.clientWidth/W);a.style.transform='scale('+s+')';f.style.height=(H*s)+'px';b.hidden=s>=0.999;}
+b.addEventListener('click',function(){big=!big;f.classList.toggle('big',big);b.setAttribute('aria-pressed',big);b.textContent=big?'sığdır':'tam boyutta gör';fit();});
+fit();addEventListener('resize',fit);})();
+</script>
+</body>
+</html>
